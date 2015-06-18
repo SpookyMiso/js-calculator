@@ -10,6 +10,7 @@ function calculatorModule () {
   var memory = 0;
   var total = 0;
 
+
   var calculator = {
      load: _load,
      getTotal: _getTotal,
@@ -25,6 +26,7 @@ function calculatorModule () {
   };
 
   return calculator;
+
 
   /**
    * sets the `total` to the number passed in
@@ -97,19 +99,30 @@ function _divide (quotient) {
     return total /= quotient;
 }
 
+<<<<<<< HEAD
  /**
    * Stores the value of `total` to `memory`
+=======
+  /**
+   * Return the value stored at `memory`
+   * @return { Number }
+>>>>>>> 3ccc69f09b41c18d89ec56c38a0fc1c0e3e8951e
    */
 
 function _save () {
   memory = total;
   return memory;
 
+<<<<<<< HEAD
 }
 
 /**
    * Return the value stored at `memory`
    * @return { Number }
+=======
+  /**
+   * Stores the value of `total` to `memory`
+>>>>>>> 3ccc69f09b41c18d89ec56c38a0fc1c0e3e8951e
    */
 
 function _recall () {
@@ -125,4 +138,11 @@ function _clear () {
 }
 
 
+<<<<<<< HEAD
 }
+=======
+  /**
+   * Validation
+   */
+
+>>>>>>> 3ccc69f09b41c18d89ec56c38a0fc1c0e3e8951e
